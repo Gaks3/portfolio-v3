@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@font-face {
+  font-family: "NineCircles";
+  src: url("./assets/NineCirclesReg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Molend";
+  src: url("./assets/Molend.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #c6ff33;
+  --primary2: #7d39eb;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+@theme {
+  --font-sans: "Geist Variable", sans-serif;
+  --font-nine-circles: "NineCircles", sans-serif;
+  --font-molend: "Molend", sans-serif;
+  --color-primary: var(--primary);
+  --color-primary2: var(--primary2);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
